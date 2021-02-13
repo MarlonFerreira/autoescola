@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import styled, { css } from "styled-components";
-import { breakAt, BreakpointsSize } from "./Breakpoints";
+import { breakAt, BreakpointsSizes } from "../styles/Breakpoints";
 
 const colorYellow = "#ffc107";
 
@@ -40,11 +40,11 @@ const Container = styled.div`
   width: 100%;
   padding: 0 8px;
 
-  ${breakAt(BreakpointsSize.sm)} {
+  ${breakAt(BreakpointsSizes.sm)} {
     padding: 0 16px;
   }
 
-  ${breakAt(BreakpointsSize.lg)} {
+  ${breakAt(BreakpointsSizes.lg)} {
     width: 1140px;
     padding: 0;
     margin: 0 auto;
@@ -52,7 +52,7 @@ const Container = styled.div`
 `;
 
 const Hero = ({ image, children }) => (
-  <Root image={image}>
+  <Root image={image} data-testid="hero">
     <Container>
       <Content>{children}</Content>
     </Container>
@@ -60,12 +60,15 @@ const Hero = ({ image, children }) => (
 );
 
 Hero.propTypes = {
+  image: PropTypes.string,
+  children: PropTypes.node,
+
   /**
    * Background image
    */
-  image: PropTypes.string.isRequired,
+  // image: PropTypes.string.isRequired,
   // title: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
-  children: PropTypes.node,
+  // children: PropTypes.node,
 };
 
 // Hero.defaultProps = {
