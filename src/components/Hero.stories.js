@@ -3,6 +3,7 @@ import { text } from "@storybook/addon-knobs";
 
 import Hero from "./Hero";
 import Heading from "./Heading";
+import Button from "./Button";
 
 import BgHighwayImage from "../stories/assets/bg-highway.jpg";
 import BgCarImage from "../stories/assets/bg-car.jpg";
@@ -33,5 +34,8 @@ export const withList = () => (
       <li>A auto escola lider em aprovação 2.</li>
       <li>A auto escola lider em aprovação 3.</li>
     </ul>
+    <Button color="primary" variant="outlined">
+      Matricule-se agora
+    </Button>
   </Hero>
 );
