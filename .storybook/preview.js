@@ -54,6 +54,13 @@ const viewports = {
       height: "800px",
     },
   },
+  extraExtraLarge: {
+    name: "Extra Large Desktop (xxl)",
+    styles: {
+      width: "1920px",
+      height: "1080px",
+    },
+  },
 };
 
 addParameters({
