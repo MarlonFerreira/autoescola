@@ -7,10 +7,12 @@ import Button from "components/atoms/Button";
 import Grid from "components/atoms/Grid";
 import Feature from "components/atoms/Feature";
 import Section from "components/molecules/Section";
+import Footer from "components/organisms/Footer";
 // import Container from "components/atoms/Container";
 
-import HeroImage from "assets/hero.jpg";
 import { FaCar, FaKey, FaMapMarkedAlt, FaAccessibleIcon } from "react-icons/fa";
+import HeroImage from "assets/hero.jpg";
+import AboutVideo from "assets/about.mp4";
 
 const Home = () => (
   <>
@@ -49,6 +51,38 @@ const Home = () => (
       </Grid>
     </Section>
     {/* </Container> */}
+    <Section inverse>
+      <Heading>
+        <h2>Conheça nossos serviços</h2>
+      </Heading>
+    </Section>
+    <Section>
+      <Grid md={2}>
+        <div>
+          <Heading>
+            <h2>Marlon Auto Escola</h2>
+          </Heading>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita
+            fugiat esse et, consectetur est nisi eum rem nesciunt ratione dolore
+            saepe quas? Pariatur eum voluptatum asperiores eaque magnam. Facere,
+            voluptas!
+          </p>
+          <div>
+            <Button color="primary">Saiba mais</Button>
+          </div>
+        </div>
+        <div>
+          <video src={AboutVideo} width="100%" autoPlay loop />
+        </div>
+      </Grid>
+    </Section>
+    <Section inverse>
+      <Heading>
+        <h2>Dúvidas recorrentes</h2>
+      </Heading>
+    </Section>
+    <Footer />
   </>
 );
 
