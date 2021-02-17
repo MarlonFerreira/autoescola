@@ -1,8 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import Container from "components/atoms/Container";
 import styled, { css } from "styled-components";
-import { breakAt, BreakpointsSizes } from "../../styles/Breakpoints";
+// import { breakAt, BreakpointsSizes } from "../../styles/Breakpoints";
 
 const Root = styled.div`
   color: #fff;
@@ -16,6 +17,8 @@ const Root = styled.div`
 `;
 
 const Content = styled.div`
+  display: inline-block;
+
   p,
   li {
     font-size: 20px;
@@ -34,20 +37,27 @@ const Content = styled.div`
   }
 `;
 
-const Container = styled.div`
-  width: 100%;
-  padding: 0 8px;
+// const Container = styled.div`
+//   width: 100%;
+//   padding: 0 8px;
 
-  ${breakAt(BreakpointsSizes.sm)} {
-    padding: 0 16px;
-  }
+//   ${breakAt(BreakpointsSizes.sm)} {
+//     padding: 0 16px;
+//   }
 
-  ${breakAt(BreakpointsSizes.lg)} {
-    width: 1140px;
-    padding: 0;
-    margin: 0 auto;
-  }
-`;
+//   ${breakAt(BreakpointsSizes.lg)} {
+//     /* width: 1140px; */
+//     width: 950px;
+//     padding: 0 16px;
+//     margin: 0 auto;
+//   }
+
+//   ${breakAt(BreakpointsSizes.xl)} {
+//     width: 1140px;
+//     padding: 0 16px;
+//     margin: 0 auto;
+//   }
+// `;
 
 const Hero = ({ image, children }) => (
   <Root image={image} data-testid="hero">
