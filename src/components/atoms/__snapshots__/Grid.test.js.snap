@@ -48,7 +48,7 @@ exports[`match snapshot with params 1`] = `
   }
 }
 
-@media (min-width:1920px) {
+@media (min-width:1520px) {
   .c0 {
     grid-template-columns: repeat(6,1fr);
   }
