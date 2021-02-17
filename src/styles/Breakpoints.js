@@ -3,7 +3,7 @@ export const BreakpointsSizes = {
   md: 768,
   lg: 992,
   xl: 1200,
-  xxl: 1920,
+  xxl: 1520,
 };
 
 export const breakAt = (size) => `@media (min-width: ${size}px)`;

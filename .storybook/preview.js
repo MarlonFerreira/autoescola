@@ -57,8 +57,8 @@ const viewports = {
   extraExtraLarge: {
     name: "Extra Large Desktop (xxl)",
     styles: {
-      width: "1920px",
-      height: "1080px",
+      width: "1600px",
+      height: "1024px",
     },
   },
 };
