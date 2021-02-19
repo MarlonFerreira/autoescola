@@ -8,7 +8,6 @@ module.exports = {
   ],
   addons: [
     "@storybook/addon-links",
-    "@storybook/addon-essentials",
     "@storybook/preset-create-react-app",
     "@storybook/addon-viewport",
     {
@@ -17,6 +16,7 @@ module.exports = {
         configureJSX: true,
       },
     },
+    "@storybook/addon-essentials",
     "@storybook/addon-knobs",
   ],
 };
