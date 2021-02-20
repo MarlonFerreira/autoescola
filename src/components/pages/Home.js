@@ -9,6 +9,8 @@ import Feature from "components/atoms/Feature";
 import Section from "components/molecules/Section";
 import Footer from "components/organisms/Footer";
 import ProductGrid from "components/organisms/ProductGrid";
+import Accordion, { AccordionGroup } from "components/atoms/Accordion";
+
 // import Container from "components/atoms/Container";
 
 import { FaCar, FaKey, FaMapMarkedAlt, FaAccessibleIcon } from "react-icons/fa";
@@ -121,6 +123,23 @@ const Home = () => (
       <Heading>
         <h2>Dúvidas recorrentes</h2>
       </Heading>
+      <AccordionGroup>
+        <Accordion title="Como eu renovo minha CNH?">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ipsum
+          quos architecto at quod minima id, unde cumque ea reiciendis aliquid
+          exercitationem iusto, tempore totam veniam ab odit eligendi quasi.
+        </Accordion>
+        <Accordion title="Como faço a mudança de categoria?">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ipsum
+          quos architecto at quod minima id, unde cumque ea reiciendis aliquid
+          exercitationem iusto, tempore totam veniam ab odit eligendi quasi.
+        </Accordion>
+        <Accordion title="Fui multado, e agora?">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ipsum
+          quos architecto at quod minima id, unde cumque ea reiciendis aliquid
+          exercitationem iusto, tempore totam veniam ab odit eligendi quasi.
+        </Accordion>
+      </AccordionGroup>
     </Section>
     <Footer />
   </>
