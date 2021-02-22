@@ -11,8 +11,8 @@ const Container = styled.div`
   }
 
   ${breakAt(BreakpointsSizes.lg)} {
-    /* width: 1140px; */
-    width: 950px;
+    width: 1140px;
+    /* width: 950px; */
     /* width: 100%; */
     padding: 0 16px;
     /* padding: 0; */
