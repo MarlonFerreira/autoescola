@@ -1,6 +1,7 @@
 # Auto Escola Marlon
 
 ![CircleCI](https://img.shields.io/circleci/build/github/MarlonFerreira/autoescola)
+![Codecov](https://img.shields.io/codecov/c/github/MarlonFerreira/autoescola)
 
 Este projeto foi desenvolvido durante o curso [React Profissional](https://nardiniacademy.com).
 
