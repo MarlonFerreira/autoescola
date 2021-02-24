@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import styled from "styled-components";
 
 import Container from "components/atoms/Container";
@@ -107,8 +107,8 @@ const Footer = () => (
   </Root>
 );
 
-Footer.defaultProps = {};
+// Footer.defaultProps = {};
 
-Footer.propTypes = {};
+// Footer.propTypes = {};
 
 export default Footer;
