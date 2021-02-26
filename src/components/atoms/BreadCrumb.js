@@ -15,7 +15,8 @@ const Item = styled.span`
   color: #fff;
 
   ${(props) =>
-    props.isClickable &&
+    // props.clickable &&
+    props.to &&
     css`
       cursor: pointer;
 
@@ -40,7 +41,7 @@ const BreadCrumb = ({ items }) => (
         key={item.label}
         as={item.link && Link}
         to={item.link}
-        isClickable={!!item.link}
+        // clickable={!!item.link}
       >
         {item.label}
       </Item>
