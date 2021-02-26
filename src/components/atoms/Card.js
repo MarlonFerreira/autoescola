@@ -27,25 +27,61 @@ CardBody.propTypes = {
 //#region CardMedia
 
 const StyledMedia = styled.div`
+  display: flex;
   background-image: url(${(props) => props.image});
   background-position: center center;
   background-size: cover;
   height: 270px;
-  background-repeat: no-repeat;
-  background-color: #cccccc;
-  max-width: 950px;
+  /* background-repeat: no-repeat; */
+  /* background-color: #cccccc; */
+  /* max-width: 950px; */
 `;
 
-export const CardMedia = ({ image }) => <StyledMedia image={image} />;
+export const CardMedia = ({ image, children }) => (
+  <StyledMedia image={image}>{children}</StyledMedia>
+);
 
 CardMedia.defaultProps = {
   image: undefined,
+  children: undefined,
 };
 
 CardMedia.propTypes = {
   image: PropTypes.string,
+  children: PropTypes.node,
 };
 
+//#endregion
+
+//#region CardMediaDescription
+const StyledMediaDescription = styled.div`
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 8px 16px;
+  color: #fff;
+  align-self: flex-end;
+  flex: 1;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+`;
+
+export const CardMediaDescription = ({ children }) => (
+  <StyledMediaDescription>{children}</StyledMediaDescription>
+);
+
+CardMediaDescription.defaultProps = {
+  children: undefined,
+};
+
+CardMediaDescription.propTypes = {
+  children: PropTypes.node,
+};
 //#endregion
 
 //#region Card
@@ -53,7 +89,7 @@ CardMedia.propTypes = {
 const StyledCard = styled.div`
   background-color: #fff;
   border-radius: 4px;
-  border: 1px solid rgba(0, 0, 0, 0.123);
+  border: 1px solid ${(props) => props.theme.colors.boder};
   overflow: hidden;
   /* min-height: 500px; */
 `;

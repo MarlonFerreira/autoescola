@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // import PropTypes from "prop-types";
 
 import Hero from "components/molecules/Hero";
@@ -111,11 +112,20 @@ const Home = () => (
             voluptas!
           </p>
           <div>
-            <Button color="primary">Saiba mais</Button>
+            <Button as={Link} to="/sobre" color="primary">
+              Saiba mais
+            </Button>
           </div>
         </div>
         <div>
-          <video src={AboutVideo} width="100%" autoPlay loop muted />
+          <video
+            src={AboutVideo}
+            width="100%"
+            autoPlay
+            playsInline
+            loop
+            muted
+          />
         </div>
       </Grid>
     </Section>
