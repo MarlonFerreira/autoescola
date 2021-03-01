@@ -17,7 +17,7 @@ import Accordion, { AccordionGroup } from "components/atoms/Accordion";
 import { FaCar, FaKey, FaMapMarkedAlt, FaAccessibleIcon } from "react-icons/fa";
 import HeroImage from "assets/hero.jpg";
 import AboutVideo from "assets/about.mp4";
-import ProductType from "types/ProductType";
+import ProductType from "models/types/ProductType";
 
 const Home = ({ products }) => (
   <>
